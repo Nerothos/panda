@@ -132,6 +132,13 @@ impl Message {
         http.add_reaction(&self.channel_id, &self.id, emoji).await
     }
 
+    /// Shortcut for [`HttpClient.add_reaction`]
+    ///
+    /// [`HttpClient.add_reaction`]: ../../../struct.HttpClient.html#method.add_reaction
+    pub async fn add_reaction_to_message(&self, http: &HttpClient, message_id: impl AsRef<str>, emoji: impl AsRef<str>) -> Result<()> {
+        http.add_reaction(&self.channel_id, message_id, emoji).await
+    }
+
     /// Shortcut for [`HttpClient.delete_message`]
     ///
     /// [`HttpClient.delete_message`]: ../../../struct.HttpClient.html#method.delete_message
