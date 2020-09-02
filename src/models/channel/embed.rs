@@ -22,53 +22,53 @@ pub struct Embed {
 
 #[derive(Default, Debug, Deserialize, Serialize)]
 pub struct EmbedFooter {
-    text: String,
-    icon_url: Option<String>,
-    proxy_icon_url: Option<String>,
+    pub text: String,
+    pub icon_url: Option<String>,
+    pub proxy_icon_url: Option<String>,
 }
 
 #[derive(Default, Debug, Deserialize, Serialize)]
 pub struct EmbedImage {
-    url: Option<String>,
-    proxy_url: Option<String>,
-    height: Option<u64>,
-    width: Option<u64>,
+    pub url: Option<String>,
+    pub proxy_url: Option<String>,
+    pub height: Option<u64>,
+    pub width: Option<u64>,
 }
 
 #[derive(Default, Debug, Deserialize, Serialize)]
 pub struct EmbedThumbnail {
-    url: Option<String>,
-    proxy_url: Option<String>,
-    height: Option<u64>,
-    width: Option<u64>,
+    pub url: Option<String>,
+    pub proxy_url: Option<String>,
+    pub height: Option<u64>,
+    pub width: Option<u64>,
 }
 
 #[derive(Default, Debug, Deserialize, Serialize)]
 pub struct EmbedVideo {
-    url: Option<String>,
-    height: Option<u64>,
-    width: Option<u64>,
+    pub url: Option<String>,
+    pub height: Option<u64>,
+    pub width: Option<u64>,
 }
 
 #[derive(Default, Debug, Deserialize, Serialize)]
 pub struct EmbedProvider {
-    name: Option<String>,
-    url: Option<String>,
+    pub name: Option<String>,
+    pub url: Option<String>,
 }
 
 #[derive(Default, Debug, Deserialize, Serialize)]
 pub struct EmbedAuthor {
-    name: Option<String>,
-    url: Option<String>,
-    icon_url: Option<String>,
-    proxy_icon_url: Option<String>,
+    pub name: Option<String>,
+    pub url: Option<String>,
+    pub icon_url: Option<String>,
+    pub proxy_icon_url: Option<String>,
 }
 
 #[derive(Default, Debug, Deserialize, Serialize)]
 pub struct EmbedField {
-    name: String,
-    value: String,
-    inline: bool,
+    pub name: String,
+    pub value: String,
+    pub inline: bool,
 }
 
 impl Embed {
